@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <span class="logo"><span></span></span>
+      <ul id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="cv.pdf" download class="cv-btn">Download CV</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Hi, I'm<br /><span id="heroName">Md.Mahmudur Rahman</span></h1>
+        <p class="hero-role">Full Stack Developer · MERN Stack</p>
+        <p class="hero-sub">
+          Fresh CS graduate with 1 year of professional experience building
+          fast, scalable web applications.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="cv.pdf" download class="btn btn-outline">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download CV
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>1+</strong><span>Year Exp</span></div>
+          <div class="divider"></div>
+          <div class="stat"><strong>10+</strong><span>Projects</span></div>
+          <div class="divider"></div>
+          <div class="stat"><strong>CS</strong><span>Graduate</span></div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="profile-wrap">
+          <img
+            src="./img/user_profile.png"
+            alt="Profile Photo"
+            class="profile-img"
+          />
+          <div class="profile-ring"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+      <div class="container">
+        <div class="sec-label">About Me</div>
+        <div class="about-layout">
+          <div class="about-text">
+            <p>
+              I'm a full stack developer who loves building clean, performant
+              web apps from the ground up. I recently graduated with a Computer
+              Science degree and have 1 year of hands-on industry experience.
+            </p>
+            <p>
+              My stack is MERN — MongoDB, Express, React, Node.js. I care deeply
+              about code quality, user experience, and shipping things that
+              actually work.
+            </p>
+            <div class="about-tags">
+              <span>Clean Code</span>
+              <span>Problem Solver</span>
+              <span>Team Player</span>
+              <span>Fast Learner</span>
+            </div>
+          </div>
+          <div class="about-info">
+            <div class="info-row">
+              <span class="info-label">Location</span
+              ><span class="info-val">Your City, Country</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Education</span
+              ><span class="info-val">B.Sc Computer Science, 2024</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Experience</span
+              ><span class="info-val">1 Year</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Status</span
+              ><span class="info-val status-open">Open to Work ✓</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Resume</span>
+              <a href="cv.pdf" download class="info-link">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Download PDF
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="sec-label">Skills</div>
+        <div class="skill-cols">
+          <div class="skill-col">
+            <div class="skill-col-title fe">
+              <span class="skill-col-icon">🎨</span> Frontend
+            </div>
+            <div class="skill-pills">
+              <span>React.js</span>
+              <span>JavaScript</span>
+              <span>HTML & CSS</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-col">
+            <div class="skill-col-title be">
+              <span class="skill-col-icon">⚙️</span> Backend
+            </div>
+            <div class="skill-pills">
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>REST APIs</span>
+              <span>JWT Auth</span>
+            </div>
+          </div>
+
+          <div class="skill-col">
+            <div class="skill-col-title db">
+              <span class="skill-col-icon">🗄️</span> Database & Tools
+            </div>
+            <div class="skill-pills">
+              <span>MongoDB</span>
+              <span>Mongoose</span>
+              <span>Git & GitHub</span>
+              <span>Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <div class="sec-label">Projects</div>
+        <div class="projects">
+          <div class="card fade-up">
+            <div class="card-header">
+              <div class="card-icon">⚡</div>
+              <div class="card-links">
+                <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+                <a href="#" target="_blank" rel="noopener">Live ↗</a>
+              </div>
+            </div>
+            <h3>Project One</h3>
+            <p>
+              Full-stack MERN app with JWT authentication, protected routes and
+              a clean REST API.
+            </p>
+            <div class="card-tags">
+              <span>React</span><span>Node.js</span><span>MongoDB</span
+              ><span>Express</span>
+            </div>
+          </div>
+
+          <div class="card fade-up">
+            <div class="card-header">
+              <div class="card-icon">💬</div>
+              <div class="card-links">
+                <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+                <a href="#" target="_blank" rel="noopener">Live ↗</a>
+              </div>
+            </div>
+            <h3>Project Two</h3>
+            <p>
+              Real-time chat application with rooms and online status using
+              Socket.io.
+            </p>
+            <div class="card-tags">
+              <span>Socket.io</span><span>React</span><span>Express</span>
+            </div>
+          </div>
+
+          <div class="card fade-up">
+            <div class="card-header">
+              <div class="card-icon">🔐</div>
+              <div class="card-links">
+                <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+              </div>
+            </div>
+            <h3>Project Three</h3>
+            <p>
+              REST API with full CRUD, JWT auth and role-based access control.
+            </p>
+            <div class="card-tags">
+              <span>Node.js</span><span>MongoDB</span><span>JWT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="sec-label">Experience</div>
+        <div class="timeline">
+          <div class="tl-item fade-up">
+            <div class="tl-left">
+              <span class="tl-date">Jan 2024 – Present</span>
+            </div>
+            <div class="tl-dot"></div>
+            <div class="tl-right">
+              <h3>Junior Full Stack Developer</h3>
+              <span class="tl-company">Company Name</span>
+              <p>
+                Building and maintaining MERN stack web apps. Collaborating with
+                designers and engineers to ship features on time.
+              </p>
+            </div>
+          </div>
+
+          <div class="tl-item fade-up">
+            <div class="tl-left">
+              <span class="tl-date">Jun 2023 – Dec 2023</span>
+            </div>
+            <div class="tl-dot"></div>
+            <div class="tl-right">
+              <h3>Web Developer Intern</h3>
+              <span class="tl-company">Internship Company</span>
+              <p>
+                Worked on React frontend features, integrated REST APIs, and
+                contributed to Express backend routes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="sec-label">Contact</div>
+        <div class="contact-box fade-up">
+          <h2>Let's Work Together</h2>
+          <p>
+            Open to full-time roles, freelance projects, or just a conversation.
+            Reach out anytime.
+          </p>
+          <div class="contact-actions">
+            <a href="mailto:your@email.com" class="btn">Send Email</a>
+            <a href="cv.pdf" download class="btn btn-outline">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download CV
+            </a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com" target="_blank" rel="noopener"
+              >GitHub</a
+            >
+            <a href="https://linkedin.com" target="_blank" rel="noopener"
+              >LinkedIn</a
+            >
+            <a href="https://twitter.com" target="_blank" rel="noopener"
+              >Twitter</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Built by <strong>Your Name</strong></span>
+      <span id="yr"></span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
